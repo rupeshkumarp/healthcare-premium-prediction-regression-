@@ -1,5 +1,6 @@
 
 import streamlit as st
+from prediction_helper import predict
 
 st.title('Health insurance Prediction App')
 
@@ -70,4 +71,4 @@ input_dict = {
 
 # Button to make prediction
 if st.button('Predict'):
-   pass
+   predict(input_dict)
