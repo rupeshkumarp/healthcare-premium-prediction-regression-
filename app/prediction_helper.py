@@ -1,4 +1,5 @@
 import pandas as pd
+import os
 from joblib import load
 
 model_rest = load("artifacts/model_rest.joblib")
