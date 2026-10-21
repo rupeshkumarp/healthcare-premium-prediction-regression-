@@ -2,7 +2,7 @@
 
 A machine learning regression project that predicts annual health insurance premiums from an individual's profile, served through an interactive **Streamlit** web app.
 
-🔗 **Live demo:** _add your Streamlit Community Cloud link here_
+🔗 **Live demo:** [rupesh-ml-premium-prediction.streamlit.app](https://rupesh-ml-premium-prediction.streamlit.app/)
 
 ---
 
