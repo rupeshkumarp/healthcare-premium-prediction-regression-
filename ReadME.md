@@ -40,10 +40,10 @@ healthcare-premium-prediction-regression-/
 ├── healthcare_premium_rest_with_gr.ipynb    # EDA, training, tuning (age > 25)
 ├── artifacts/                   # Saved models / scalers (adjust to your folder name)
 ├── requirements.txt
+├── model_segmentation.ipynb
 └── README.md
-```
 
-> Update the tree above if your folder names differ.
+```
 
 ---
 
@@ -58,8 +58,6 @@ healthcare-premium-prediction-regression-/
 ---
 
 ## Input Features
-
-_Fill in the exact features your app collects. Typical examples:_
 
 | Feature | Description |
 |---------|-------------|
@@ -89,12 +87,12 @@ _Fill in the exact features your app collects. Typical examples:_
 
 ### Results
 
-_Add your final metrics here:_
+Both age-group models use **XGBoost Regressor**. Metrics on the held-out test set:
 
-| Model | R² | RMSE | MAE |
-|-------|----|------|-----|
-| Young (≤ 25) | – | – | – |
-| Rest (> 25) | – | – | – |
+| Model | Algorithm | Train R² | Test R² | MSE | RMSE |
+|-------|-----------|----------|---------|-----|------|
+| Young (≤ 25) | XGBoost | 0.9805 | 0.9687 | 238,114.67 | 487.97 |
+| Rest (> 25) | XGBoost | 0.9323 | 0.9008 | 4,694,416.50 | 2,166.66 |
 
 ---
 
@@ -154,9 +152,6 @@ xgboost==3.4.1
 joblib==1.5.3
 streamlit
 ```
-
-> Keep scikit-learn and xgboost versions identical between training and deployment — models saved with one version may not load correctly in another.
-
 ---
 
 ## Future Improvements
@@ -172,3 +167,5 @@ streamlit
 
 **Rupesh Kumar P**
 MSDA student · [GitHub](https://github.com/rupeshkumarp)
+
+---
