@@ -172,9 +172,3 @@ streamlit
 
 **Rupesh Kumar P**
 MSDA student · [GitHub](https://github.com/rupeshkumarp)
-
----
-
-## License
-
-_Add a license (e.g., MIT) or remove this section._
